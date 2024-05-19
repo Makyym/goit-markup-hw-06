@@ -36,7 +36,10 @@ ul {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
-.navigation-list:focus :hover {
+.navigation-list:focus {
+  color: #404bbf;
+}
+.navigation-list:hover {
   color: #404bbf;
 }
 
@@ -51,7 +54,10 @@ ul {
   font-style: normal;
   text-decoration: none;
 }
-.contacts-list:hover :focus {
+.contacts-list:hover {
+  background-color: #404bbf;
+}
+.contacts-list:focus {
   background-color: #404bbf;
 }
 
@@ -67,8 +73,6 @@ ul {
 }
 
 .btn {
-  width: 169px;
-  height: 56px;
   background-color: #4d5ae5;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -76,23 +80,20 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
-  align-items: center;
-  border: none;
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
 }
 
-.btn:hover :focus {
+.btn:hover {
+  color: #404bbf;
+}
+.btn:focus {
   color: #404bbf;
 }
 
 .box-model {
   background-color: #2e2f42;
-}
-
-.box-service {
-  align-items: center;
 }
 
 .section-team {
@@ -153,15 +154,7 @@ ul {
 
 .portfolio-box-model {
   background-color: #fff;
-  border: 1px solid #e7e9fc;
 }
-
-.portfolio-text-box-model {
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
-}
-
 .footer-box-model {
   background-color: #2e2f42;
 }
