@@ -55,10 +55,10 @@ ul {
   text-decoration: none;
 }
 .contacts-list:hover {
-  background-color: #404bbf;
+  color: #404bbf;
 }
 .contacts-list:focus {
-  background-color: #404bbf;
+  color: #404bbf;
 }
 
 .title-solutions {
@@ -86,10 +86,10 @@ ul {
 }
 
 .btn:hover {
-  color: #404bbf;
+  background-color: #404bbf;
 }
 .btn:focus {
-  color: #404bbf;
+  background-color: #404bbf;
 }
 
 .box-model {
