@@ -22,11 +22,11 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #2e2f42;
+  color: #4d5ae5;
 }
 
 .logo-icon-color {
-  color: #4d5ae5;
+  color: #2e2f42;
 }
 
 .navigation-list {
@@ -36,6 +36,9 @@ ul {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
+.navigation-list :focus :hover {
+  color: #404bbf;
+}
 
 .contacts-list {
   font-weight: 400;
@@ -44,11 +47,11 @@ ul {
   letter-spacing: 0.02em;
   color: #434455;
 }
-address {
+.contacts-list-address {
   font-style: normal;
   text-decoration: none;
 }
-address:hover :focus {
+.contacts-list :hover :focus {
   background-color: #404bbf;
 }
 
@@ -80,7 +83,7 @@ address:hover :focus {
   cursor: pointer;
 }
 
-.btn:hover :focus {
+.btn :hover :focus {
   background-color: #404bbf;
 }
 
@@ -184,4 +187,21 @@ address:hover :focus {
 
 .section-box-team {
   background-color: #f4f4fd;
+}
+.portfolio-list-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.portfolio-list-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
