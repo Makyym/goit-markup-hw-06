@@ -36,7 +36,7 @@ ul {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
-.navigation-list :focus :hover {
+.navigation-list:focus :hover {
   color: #404bbf;
 }
 
@@ -51,7 +51,7 @@ ul {
   font-style: normal;
   text-decoration: none;
 }
-.contacts-list :hover :focus {
+.contacts-list:hover :focus {
   background-color: #404bbf;
 }
 
@@ -83,8 +83,8 @@ ul {
   cursor: pointer;
 }
 
-.btn :hover :focus {
-  background-color: #404bbf;
+.btn:hover :focus {
+  color: #404bbf;
 }
 
 .box-model {
