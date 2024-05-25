@@ -215,6 +215,10 @@ img {
   gap: 24px;
 }
 
+.team-person {
+  padding: 32px 0;
+}
+
 .team-list-title {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -223,7 +227,6 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin-top: 32px;
   margin-bottom: 8px;
 }
 
@@ -235,7 +238,6 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
-  margin-bottom: 32px;
 }
 
 .section-title {
