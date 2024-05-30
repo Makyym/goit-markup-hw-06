@@ -39,6 +39,9 @@ img {
 
 .header-section {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+  background: #fff;
 }
 
 .logo-icon {
@@ -49,7 +52,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  padding: 24px 0;
   margin-right: 76px;
 }
 
@@ -60,6 +62,7 @@ img {
 .logo-navlist {
   display: flex;
   align-items: center;
+  padding: 24px 0;
 }
 
 .navigation-menu {
@@ -80,12 +83,29 @@ img {
   color: #2e2f42;
   padding: 24px 0;
 }
-.navigation-list-item:focus {
-  color: #404bbf;
-}
+
+.navigation-list-item:focus,
 .navigation-list-item:hover {
   color: #404bbf;
 }
+
+.current {
+  position: relative;
+  color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.current::after {
+  content: "";
+  border-radius: 2px;
+  height: 4px;
+  width: 100%;
+  background-color: #404bbf;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+}
+
 .contacts-list {
   display: flex;
   padding: 24px 0;
@@ -98,15 +118,14 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-list-address {
   font-style: normal;
   text-decoration: none;
   display: flex;
 }
-.contacts-list-item:hover {
-  color: #404bbf;
-}
+.contacts-list-item:hover,
 .contacts-list-item:focus {
   color: #404bbf;
 }
@@ -141,11 +160,10 @@ img {
   border: 0;
   display: block;
   min-width: 169px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.order-btn:hover {
-  background-color: #404bbf;
-}
+.order-btn:hover,
 .order-btn:focus {
   background-color: #404bbf;
 }
@@ -160,6 +178,7 @@ img {
     url(../images/hero-office.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
 }
 
 .section-team {
@@ -295,6 +314,15 @@ img {
   align-items: center;
 }
 
+.team-box .social-network {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-box:hover .social-network,
+.team-box:focus .social-network {
+  background-color: #404bbf;
+}
+
 .social-network .icon {
   width: 16px;
   height: 16px;
@@ -326,7 +354,38 @@ img {
 }
 
 .portfolio-box-model {
-  width: calc(100% - 2 * 24px) / 3;
+  width: calc((100% - 2 * 24px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-box-model:hover,
+.portfolio-box-model:focus {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.project-card-cover {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-box-model:hover .project-card-cover-text,
+.portfolio-box-model:focus .project-card-cover-text {
+  transform: translateY(0);
+}
+
+.project-card-cover-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  background-color: #4d5ae5;
+  position: absolute;
+  top: 0;
+  padding: 40px 32px 164px;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-text-box-model {
@@ -413,4 +472,13 @@ img {
 .icon-footer {
   width: 24px;
   height: 24px;
+}
+
+.footer-list-item .social-network {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-list-item:hover .social-network,
+.footer-list-item:focus .social-network {
+  background-color: #31d0aa;
 }
