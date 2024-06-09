@@ -479,6 +479,11 @@ img {
 .logo-text {
   margin-right: 120px;
 }
+
+.social-networks-list-text{
+margin-right: 80px;
+}
+
 .footer-social-network-link {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -638,7 +643,14 @@ input {
       background-color: transparent;
       padding: 8px 16px;
       color: rgba(46, 47, 66, 0.4);
+      outline: none;
 }
+
+.modal-box .modal-comment-text:hover,
+.modal-box .modal-comment-text:focus {
+  border: 1px solid #4d5ae5;
+}
+
 .modal-comment-text::placeholder{color: rgba(46, 47, 66, 0.4);}
 
 
@@ -659,11 +671,15 @@ input {
         color: #fff;
         font-weight: 500;
     font-size: 16px;
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .submit-btn:hover{
-  background: #404bbf;
+  background-color: #404bbf;
+}
+
+.check-privacy:checked + .checkbox-privacy-text .checkbox-frame {
+  background-color: #404bbf;;
 }
 
 .checkbox-frame {
@@ -671,21 +687,28 @@ input {
     border: 1px solid rgba(46, 47, 66, 0.4);
     width: 16px;
     height: 16px;
-    margin-bottom: 24px;
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 8px;
 }
 
-.checbox-form{
-  display: flex;
-gap: 8px;
+.checkbox-frame svg{
+fill: #f4f4fd;
+}
+
+.checkbox-form{
+margin-bottom: 24px;
 }
 
 .checkbox-privacy-text {
 font-weight: 400;
 font-size: 12px;
-line-height: 14px; 
 line-height: 1.17;
 letter-spacing: 0.04em;
 color: #8e8f99;
+display: flex;
+align-items: center;
 }
 
 .checkbox-privacy-link{
@@ -694,6 +717,58 @@ color: #8e8f99;
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #4d5ae5;
+    margin-left: 5px;
 }
 
+.subscribe-btn {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 16px;
+    border-radius: 4px;
+      padding: 8px 24px;
+      width: 165px;
+      background-color: #4d5ae5;
+      border: none;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.subscribe-btn-icon {
+  fill: white;
+}
+
+.subscribe-btn:hover {
+  background-color: #404bbf;
+}
+
+.subscribe-box {
+  display: flex;
+  gap: 24px;
+}
+
+.subscribe-email {
+  border: 1px solid #fff;
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    padding: 8px 16px;
+    background-color: transparent;
+    outline: none;
+    font-weight: 400;
+      font-size: 12px;
+      line-height: 24px;
+      line-height: 2;
+      letter-spacing: 0.04em;
+      color: #fff;
+}
+
+.subscribe-email::placeholder {
+  font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+      line-height: 2;
+      letter-spacing: 0.04em;
+      color: #fff;
+}
