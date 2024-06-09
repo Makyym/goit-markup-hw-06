@@ -576,7 +576,11 @@ img {
   margin-bottom: 8px;
   display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
+}
+
+.modal-comment-box {
+  margin-bottom: 16px;
 }
 
 input {
@@ -661,3 +665,35 @@ input {
 .submit-btn:hover{
   background: #404bbf;
 }
+
+.checkbox-frame {
+  border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    width: 16px;
+    height: 16px;
+    margin-bottom: 24px;
+}
+
+.checbox-form{
+  display: flex;
+gap: 8px;
+}
+
+.checkbox-privacy-text {
+font-weight: 400;
+font-size: 12px;
+line-height: 14px; 
+line-height: 1.17;
+letter-spacing: 0.04em;
+color: #8e8f99;
+}
+
+.checkbox-privacy-link{
+  line-height: 16px;
+    line-height: 1.33;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #4d5ae5;
+}
+
+
