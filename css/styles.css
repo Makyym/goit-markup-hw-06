@@ -735,8 +735,6 @@ font-size: 12px;
 line-height: 1.17;
 letter-spacing: 0.04em;
 color: #8e8f99;
-display: flex;
-align-items: center;
 }
 
 .checkbox-privacy-link{
@@ -745,7 +743,6 @@ align-items: center;
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #4d5ae5;
-    margin-left: 5px;
 }
 
 .subscribe-btn {
