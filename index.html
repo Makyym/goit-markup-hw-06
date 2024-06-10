@@ -387,19 +387,21 @@
                     </li>
                 </ul>
                 </div>
-                <div>
+                <div class="subcribe-wrap">
                     <p class="social-networks-text">Subscribe</p>
                     <form class="subscribe-box">
-                        <input type="email" name="user-mail" placeholder="E-mail" class="subscribe-email" required>
-                        <button type="button" class="social-networks-text subscribe-btn">Subscribe<svg width="24" height="24"
-                                class="subscribe-btn-icon">
-                                <use href="./images/icons.svg#icon-icon-send"></use>
-                            </svg></button>
+                        <label class="subscribe-mail">
+                            <input type="email" name="user-mail" placeholder="E-mail" class="subscribe-email" required>
+                            <button type="button" class="social-networks-text subscribe-btn">Subscribe<svg width="24" height="24"
+                                    class="subscribe-btn-icon">
+                                    <use href="./images/icons.svg#icon-icon-send"></use>
+                                </svg></button>
+                        </label>
                     </form>
             </div>
         </div>
     </footer>
-    <div class="blackdrop">
+    <div class="blackdrop is-open">
         <div class="modal">
             <button type="button" class="modal-close"><svg class="modal-icon-btn" width="8" height="8">
                 <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
@@ -434,12 +436,12 @@
                     </div>
                 </div>
                 <div class="modal-box modal-comment-box" >
-                    <label for="comment-box" class="modal-label">Comment</label>
-                    <textarea name="" id="comment-box" class="modal-comment-text" placeholder="Text input"></textarea>
+                    <label for="user-comment" class="modal-label">Comment</label>
+                    <textarea name="user-comment" id="user-comment" class="modal-comment-text" placeholder="Text input"></textarea>
                 </div>
 <div class="checkbox-form">
-    <input type="checkbox" name="policy" class="check-privacy visually-hidden" id="policy" value="true"/>
-        <label for="policy" class="checkbox-privacy-text">
+    <input type="checkbox" name="user-privacy" class="check-privacy visually-hidden" id="user-privacy" value="true"/>
+        <label for="user-privacy" class="checkbox-privacy-text">
             <span class="checkbox-frame">
                 <svg  width="10" height="8">
                     <use href="./images/icons.svg#icon-Vector"></use>
