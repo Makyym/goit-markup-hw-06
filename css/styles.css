@@ -516,6 +516,14 @@ margin-right: 80px;
   background-color: rgba(46, 47, 66, 0.4);
   position: fixed;
   top: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.blackdrop.is-open {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .modal {
